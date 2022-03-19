@@ -1,0 +1,29 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make all \u000D"}}]
+        },
+    ],
+
+    // \ files
+    "files.exclude": {
+        "**/lowCode/**":true,
+        "**/docs/**":true,
+    },
+    "files.watcherExclude": {
+        "**/docs/**":true,
+    },
+    "files.associations": {
+    },
+    // / files
+
+    // \ editor
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    // / editor
+}
